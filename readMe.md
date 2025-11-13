@@ -1,6 +1,22 @@
 # Panduan Lengkap Perintah File dan Direktori di Terminal
 
-## 📁 Membuat File dan Folder
+## 🧭 Navigasi (Navigation)
+
+| Perintah | Fungsi |
+|----------|--------|
+| `pwd` | Menampilkan lokasi folder saat ini |
+| `ls` | Menampilkan daftar isi folder |
+| `ls -la` | Menampilkan semua file (termasuk tersembunyi) secara detail |
+| `ls -R` | Menampilkan semua isi folder dan subfoldernya |
+| `cd nama-folder` | Masuk ke folder tertentu |
+| `cd ..` | Kembali ke folder sebelumnya (naik 1 level) |
+| `cd ../..` | Kembali 2 level ke atas |
+| `cd folder1/folder2` | Masuk ke folder bertingkat sekaligus |
+| `clear` | Membersihkan layar terminal |
+
+## 🛠️ Manipulasi (Manipulation)
+
+### 📁 Membuat File dan Folder
 
 | Perintah | Fungsi |
 |----------|--------|
@@ -8,7 +24,7 @@
 | `mkdir -p folder1/folder2/folder3` | Membuat folder bertingkat sekaligus |
 | `touch nama-file.txt` | Membuat file baru (kosong) |
 
-## ✏️ Menulis ke File
+### ✏️ Menulis ke File
 
 | Perintah | Fungsi |
 |----------|--------|
@@ -17,7 +33,7 @@
 | `cat file-a > file-b` | Salin isi file-a ke file-b (menimpa isi file-b) |
 | `cat file-a >> file-b` | Tambahkan isi file-a ke akhir file-b |
 
-## 🔄 Memindahkan dan Mengganti Nama
+### 🔄 Memindahkan dan Mengganti Nama
 
 | Perintah | Fungsi |
 |----------|--------|
@@ -26,7 +42,7 @@
 | `mv folder-lama folder-baru` | Mengganti nama folder |
 | `mv folder target-folder/` | Memindahkan folder ke folder lain |
 
-## 🗑️ Menghapus File dan Folder
+### 🗑️ Menghapus File dan Folder
 
 | Perintah | Fungsi |
 |----------|--------|
@@ -36,7 +52,7 @@
 | `rm -rf folder` | Menghapus folder paksa (hati-hati!) |
 | `rm *.txt` | Menghapus semua file dengan ekstensi .txt |
 
-## 📋 Menyalin File dan Folder
+### 📋 Menyalin File dan Folder
 
 | Perintah | Fungsi |
 |----------|--------|
@@ -50,6 +66,7 @@
 | Perintah | Fungsi |
 |----------|--------|
 | `cat file` | Tampilkan seluruh isi file |
+| `echo "output-here"` | Menampilkan teks yang diketik |
 | `head file` | Tampilkan 10 baris pertama |
 | `tail file` | Tampilkan 10 baris terakhir |
 | `less file` | Baca file dengan scroll (tekan q untuk keluar) |
@@ -58,10 +75,27 @@
 
 | Perintah | Fungsi |
 |----------|--------|
-| `ls` | Tampilkan daftar file dan folder |
-| `ls -la` | Tampilkan semua file (termasuk tersembunyi) secara detail |
 | `find . -name "*.txt"` | Cari semua file .txt di folder ini |
 | `grep "kata" file` | Cari kata tertentu dalam file |
+
+## ⚙️ Operator (Operators)
+
+| Operator | Fungsi | Contoh |
+|----------|--------|--------|
+| `>` | Menimpa isi file dengan hasil perintah | `echo "Hello, World" > file.txt` |
+| `>>` | Menambah hasil perintah ke akhir file | `echo "Hello, World" >> file.txt` |
+| `;` | Menjalankan beberapa perintah berurutan | `echo "Howdy there!" ; cat file.txt` |
+| `\|\|` | Menjalankan perintah alternatif jika perintah pertama gagal | `mkdir work \|\| echo "Directory creation failed. Does it already exist?"` |
+| `&&` | Menjalankan perintah kedua hanya jika perintah pertama berhasil | `mkdir video-games && cd video-games` |
+
+## ⌨️ Shortcut Keyboard
+
+| Shortcut | Fungsi |
+|----------|--------|
+| `Tab` | Melengkapi nama file atau folder secara otomatis |
+| `↑` / `↓` | Mengulangi perintah yang sudah diketik sebelumnya |
+| `Ctrl + L` atau `Command + K` | Membersihkan layar terminal |
+| `Ctrl + C` | Membatalkan perintah yang sedang berjalan |
 
 ---
 
@@ -78,3 +112,4 @@
 - Gunakan **tanda kutip** jika nama file ada spasi: `"nama file.txt"`
 - Gunakan **`./`** untuk merujuk folder saat ini
 - Gunakan **`../`** untuk merujuk folder di atasnya
+- Gunakan **`~`** untuk merujuk folder home userRetryClaude can make mistakes. Please double-check responses. Sonnet 4.5
