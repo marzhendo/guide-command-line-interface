@@ -112,4 +112,4 @@
 - Gunakan **tanda kutip** jika nama file ada spasi: `"nama file.txt"`
 - Gunakan **`./`** untuk merujuk folder saat ini
 - Gunakan **`../`** untuk merujuk folder di atasnya
-- Gunakan **`~`** untuk merujuk folder home userRetryClaude can make mistakes. Please double-check responses. Sonnet 4.5
+- Gunakan **`~`** untuk merujuk folder home 
